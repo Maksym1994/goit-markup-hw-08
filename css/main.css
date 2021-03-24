@@ -1637,7 +1637,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 370px) {
   .card-set__item {
     width: 100%;
     height: 100%;
