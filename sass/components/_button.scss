@@ -1,0 +1,78 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 4px;
+  font-family: $sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $secondaryColor;
+  background-color: $accentColor;
+  cursor: pointer;
+  @include transition(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadowColor;
+  }
+
+  &--send {
+    margin-top: 20px;
+  }
+}
+
+.button--mail {
+  display: flex;
+  padding: 10px 29px;
+  /* margin-left: 12px; */
+  line-height: 1.9;
+}
+
+.button__icon {
+  margin-left: 10px;
+}
+
+.button-page-nav {
+  display: block;
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.64;
+  border: none;
+  border-radius: 4px;
+  color: $primaryColor;
+  background-color: $backgroundColor;
+  cursor: pointer;
+  transition: color 250ms $timingFunction,
+    background-color 250ms $timingFunction, box-shadow 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $secondaryColor;
+    background-color: $accentColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

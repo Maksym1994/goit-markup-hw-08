@@ -1,0 +1,25 @@
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 77px;
+  margin-bottom: 40px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 30px; 
+    justify-content: center;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.page-nav__item {
+  margin-bottom: 15px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: unset;
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

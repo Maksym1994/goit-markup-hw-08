@@ -1,0 +1,46 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  min-height: 609px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 100vh;
+  background-color: $secondaryColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow-y: auto;
+  @include transition(transform);
+  @media screen and(min-width: 1200px) {
+    max-width: 528px;
+    min-height: 581px;
+  }
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $secondaryColor;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $accentColor;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  fill: currentColor;
+}

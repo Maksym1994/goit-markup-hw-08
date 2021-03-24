@@ -1,0 +1,32 @@
+.social-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.social-footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $secondaryColor;
+  border: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-color: #44454e;
+  transition: background-color 250ms $timingFunction,
+    border 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accentColor;
+    background-color: $accentColor;
+  }
+}
+
+.social-footer__icon {
+  fill: currentColor;
+}

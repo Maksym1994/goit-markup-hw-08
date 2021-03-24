@@ -1,0 +1,36 @@
+.logo {
+  font-family: $serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.14;
+  color: $primaryColor;
+  text-decoration: none;
+  margin-right: auto;
+  @include transition(color);
+  @media (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.logo__text {
+  color: $accentColor;
+}
+
+.logo--footer {
+  display: flex;
+  margin-bottom: 20px;
+  color: $secondaryColor;
+  @media screen and(max-width: 1199px) {
+    justify-content: center;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
